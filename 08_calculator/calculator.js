@@ -6,7 +6,13 @@ const subtract = function (firstNumber, secondeNumber) {
   return firstNumber - secondeNumber;
 };
 
-const sum = function () {};
+const sum = function (numbersList) {
+  let result = 0;
+  for (let i = 0; i < numbersList.length; i++) {
+    result += parseInt(numbersList[i]);
+  }
+  return result;
+};
 
 const multiply = function () {};
 
