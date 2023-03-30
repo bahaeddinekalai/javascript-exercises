@@ -1,6 +1,8 @@
 const removeFromArray = function (myArray, ...args) {
   for (let arg of args) {
-    myArray.splice(myArray.indexOf(arg), 1);
+    if (typeof arg == "number" && myArray.indexOf(arg) != -1) {
+      myArray.splice(myArray.indexOf(arg), 1);
+    }
   }
 
   return myArray;
