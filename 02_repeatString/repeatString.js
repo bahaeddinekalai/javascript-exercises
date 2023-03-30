@@ -1,4 +1,7 @@
 const repeatString = function (textToRepeat, numberOfRepetition) {
+  if (numberOfRepetition < 0) {
+    return "ERROR";
+  }
   let returnString = "";
   for (let i = 0; i < numberOfRepetition; i++) {
     returnString += textToRepeat;
