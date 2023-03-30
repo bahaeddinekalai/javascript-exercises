@@ -6,13 +6,20 @@ const smallFirst = (firstNumber = 1, secondeNumber = 4) => {
   }
   return [firstNumber, secondeNumber];
 };
+const validateNumber = (number)=>{
+    return(number >= 0 ) &&(typeof number == "number")
+}
 const sumAll = function (firstNumber = 1, secondeNumber = 4) {
   let result = 0;
-  [firstNumber, secondeNumber] = smallFirst(firstNumber, secondeNumber);
-  for (let i = firstNumber; i < secondeNumber + 1; i++) {
-    result += i;
+  if (validateNumber(firstNumber) && validateNumber(secondeNumber)) {
+    [firstNumber, secondeNumber] = smallFirst(firstNumber, secondeNumber);
+    for (let i = firstNumber; i < secondeNumber + 1; i++) {
+      result += i;
+    }
+    return result;
+  } else {
+    return "ERROR";
   }
-  return result;
 };
 
 // Do not edit below this line
