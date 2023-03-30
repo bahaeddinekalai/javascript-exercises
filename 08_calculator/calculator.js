@@ -22,7 +22,9 @@ const multiply = function (numbersList) {
   return result;
 };
 
-const power = function () {};
+const power = function (firstNumber, secondeNumber) {
+  return Math.pow(firstNumber , secondeNumber);
+};
 
 const factorial = function () {};
 
