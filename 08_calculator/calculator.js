@@ -14,7 +14,13 @@ const sum = function (numbersList) {
   return result;
 };
 
-const multiply = function () {};
+const multiply = function (numbersList) {
+  let result = 1;
+  for (let i = 0; i < numbersList.length; i++) {
+    result *= parseInt(numbersList[i]);
+  }
+  return result;
+};
 
 const power = function () {};
 
