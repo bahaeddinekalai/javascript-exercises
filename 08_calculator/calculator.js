@@ -23,10 +23,16 @@ const multiply = function (numbersList) {
 };
 
 const power = function (firstNumber, secondeNumber) {
-  return Math.pow(firstNumber , secondeNumber);
+  return Math.pow(firstNumber, secondeNumber);
 };
 
-const factorial = function () {};
+const factorial = function (number) {
+  let result = 1;
+  for (let i = 1; i <= number; i++) {
+    result *= i;
+  }
+  return result;
+};
 
 // Do not edit below this line
 module.exports = {
